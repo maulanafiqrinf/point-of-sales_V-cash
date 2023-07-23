@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7732bec7-9095-4af4-9d14-00c62ae09ae1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_datapetugas.`id_petugas` AS tb_datapetugas_id_petugas,
+     tb_datapetugas.`nama_petugas` AS tb_datapetugas_nama_petugas,
+     tb_datapetugas.`email` AS tb_datapetugas_email,
+     tb_datapetugas.`alamat` AS tb_datapetugas_alamat,
+     tb_datapetugas.`tanggal_pendaftaran` AS tb_datapetugas_tanggal_pendaftaran,
+     tb_datapetugas.`username` AS tb_datapetugas_username,
+     tb_datapetugas.`password` AS tb_datapetugas_password
+FROM
+     `tb_datapetugas` tb_datapetugas]]>
+	</queryString>
+	<field name="tb_datapetugas_id_petugas" class="java.lang.Integer"/>
+	<field name="tb_datapetugas_nama_petugas" class="java.lang.String"/>
+	<field name="tb_datapetugas_email" class="java.lang.String"/>
+	<field name="tb_datapetugas_alamat" class="java.lang.String"/>
+	<field name="tb_datapetugas_tanggal_pendaftaran" class="java.sql.Date"/>
+	<field name="tb_datapetugas_username" class="java.lang.String"/>
+	<field name="tb_datapetugas_password" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="169" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="14" width="802" height="1" uuid="d06885d8-fb0f-45da-9b97-b184001732e1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="154" width="802" height="1" uuid="6750f761-9633-4e24-8fbe-cf5272bb7f77"/>
+			</line>
+			<staticText>
+				<reportElement x="217" y="39" width="338" height="33" uuid="277f0b3b-d754-4b26-bf0e-321aa30729aa"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA KARYAWAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="72" width="218" height="29" uuid="49a74b20-a7bb-47f3-834c-9545bcbe304f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24"/>
+				</textElement>
+				<text><![CDATA[CAFE VEGAN WAY]]></text>
+			</staticText>
+			<image>
+				<reportElement x="121" y="31" width="129" height="95" uuid="9020bb1c-9635-4a29-a21d-13eb852a384a"/>
+				<imageExpression><![CDATA["C:\\Users\\Lenovo\\Downloads\\veganway.id-31052021-0001-removebg-preview.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="36" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="702" y="0" width="100" height="20" uuid="6b1b78bd-0e5b-497f-9f42-09ccdfde142c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="651" y="0" width="100" height="20" uuid="b445e69d-684c-4bc0-bc79-2241c702bc1b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="0" width="100" height="20" uuid="aa00c091-52aa-4116-875b-b5227237d7b6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Id Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="0" width="100" height="20" uuid="7bf1fbe8-4399-47d7-86e4-b029af0998f6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Petugas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="0" width="100" height="20" uuid="0e269486-45fd-4929-9bb9-6feb002e5111"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="0" width="100" height="20" uuid="59f34ae2-012f-4d6e-b6eb-daf4f40427f6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="451" y="0" width="100" height="20" uuid="c96abc93-c614-48c8-a8b2-985a5f6290a0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pendaftaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="551" y="0" width="100" height="20" uuid="822ef711-98fe-4f27-86b2-5098559d3d08"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Username]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="51" y="0" width="100" height="20" uuid="f71f284a-ef10-4920-adfd-a604d58bcb32"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_datapetugas_id_petugas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="0" width="100" height="20" uuid="d72ead8b-65a3-46fe-ae22-fbdd4b9d0d16"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_datapetugas_nama_petugas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="251" y="0" width="100" height="20" uuid="29314922-1424-4898-b02b-699999af198d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_datapetugas_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="351" y="0" width="100" height="20" uuid="eee927b9-5cf3-4790-b1f0-d55bb2894aa8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_datapetugas_alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="451" y="0" width="100" height="20" uuid="8adaed19-8f4c-4fe0-bac5-2657c1536953"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_datapetugas_tanggal_pendaftaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="551" y="0" width="100" height="20" uuid="6b6e7aba-1f4b-43a3-9d4b-7a35eeff60c2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_datapetugas_username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="651" y="0" width="100" height="20" uuid="97a0bbf7-33ee-483a-912e-63131fe92443"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tb_datapetugas_password}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="e9799624-7ab2-4869-b108-35d46ff2d82e"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
